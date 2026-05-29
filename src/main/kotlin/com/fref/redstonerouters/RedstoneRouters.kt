@@ -26,5 +26,9 @@ class RedstoneRouters : JavaPlugin() {
             val registrar = event.registrar()
             registrar.register("OpenPingBlockGUI", Commands.OpenPingBlockGUI())
         }
+        this.lifecycleManager.registerEventHandler(LifecycleEvents.COMMANDS) { event ->
+            val registrar = event.registrar()
+            registrar.register("PlaceRedstoneRouter", Commands.PlaceRedstoneRouter())
+        }
     }
 }
