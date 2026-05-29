@@ -7,7 +7,11 @@ import org.bukkit.Bukkit
 import org.bukkit.entity.Player
 import org.bukkit.event.player.PlayerJoinEvent
 
+
 class RedstoneRouters : JavaPlugin() {
+    companion object PingBlockIndex {
+        var index = 0
+    }
     override fun onEnable() {
         logger.info("Aaa... MIC OK! note: why did i make the startup log this oh yeah because i have the humour of a shoe i hope i remember to remove this for the release")
         this.lifecycleManager.registerEventHandler(LifecycleEvents.COMMANDS) { event ->
@@ -17,6 +21,10 @@ class RedstoneRouters : JavaPlugin() {
         this.lifecycleManager.registerEventHandler(LifecycleEvents.COMMANDS) { event ->
             val registrar = event.registrar()
             registrar.register("PlacePingBlock", Commands.PlacePingBlock())
+        }
+        this.lifecycleManager.registerEventHandler(LifecycleEvents.COMMANDS) { event ->
+            val registrar = event.registrar()
+            registrar.register("OpenPingBlockGUI", Commands.OpenPingBlockGUI())
         }
     }
 }

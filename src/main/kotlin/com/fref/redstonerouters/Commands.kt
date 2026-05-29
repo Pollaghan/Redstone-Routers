@@ -18,7 +18,19 @@ class Commands {
     }
     class PlacePingBlock : BasicCommand {
         override fun execute(source: CommandSourceStack, p1: Array<String>) {
-            Blocks.PingBlock.PlaceBlock("~ ~ ~")
+            val player = source.sender as? org.bukkit.entity.Player ?: return
+            val loc = player.location
+            val snapX = if (loc.blockX < 0) "${loc.blockX + 1}.5" else "${loc.blockX}.5"
+            val snapY = "${loc.blockY}"
+            val snapZ = if (loc.blockZ < 0) "${loc.blockZ + 1}.5" else "${loc.blockZ}.5"
+            val alignedLocationString = "$snapX $snapY $snapZ"
+            Blocks.PingBlock.PlaceBlock(alignedLocationString, player.name)
+        }
+    }
+    class OpenPingBlockGUI : BasicCommand {
+        override fun execute(source: CommandSourceStack, p1: Array<String>) {
+            val player = source.sender as? org.bukkit.entity.Player ?: return
+            Blocks.PingBlock.openGui(RedstoneRouters(), player)
         }
     }
 }
