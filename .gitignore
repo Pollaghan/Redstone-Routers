@@ -112,10 +112,4 @@ buildNumber.properties
 
 # Common working directory
 run/
-/Website/
-/Website/Blocks.html
-/Website/Icon.png
-/Website/index.html
-/Website/Items.html
-/Website/Setup.html
-/Website/style.css
+Website
