@@ -1,8 +1,0 @@
-name: RedstoneRouters
-version: '${version}'
-
-main: com.fref.redstonerouters.RedstoneRouters
-api-version: '26.1.2'
-load: POSTWORLD
-authors: [ "fref" ]
-dependencies:
