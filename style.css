@@ -1,8 +1,14 @@
 body {
     background-color: black;
-    font-family: 'Courier New', Courier, monospace; /* Clean, terminal-style font */
+    font-family: "Press Start 2P", system-ui;
     font-size: 16px;
     color: lime;
+    background-image: url("background.png");
+    background-size: 300px;
+    image-rendering: pixelated;
+    text-shadow: 15px 15px 5px black;
+    -webkit-text-stroke: 1px black;
+    -webkit-font-smoothing: none;
 }
 .link {
     color: lime;
@@ -34,4 +40,7 @@ body {
 .preloader-hidden {
     opacity: 0;
     visibility: hidden;
+}
+#code {
+    color: yellow;
 }
