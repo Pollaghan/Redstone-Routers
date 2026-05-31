@@ -10,7 +10,6 @@ body:not(:has(.switch input:checked)) {
     background-size: 300px;
     image-rendering: pixelated;
     text-shadow: 15px 15px 5px black;
-    -webkit-text-stroke: 1px black;
 }
 .link {
     color: lime;
