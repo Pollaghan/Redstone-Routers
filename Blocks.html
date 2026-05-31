@@ -13,14 +13,14 @@
     <link href="https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&family=Press+Start+2P&display=swap" rel="stylesheet">
 </div>
 <body>
-<h1>Blocks</h1>
+<h1>Blocks <img class="itemicon" src="Block.png"> </h1>
 <h2>RENDERING</h2>
-<h3>So paper plugins are not really supposed to have blocks and items because that's what mods do, but i made blocks anyway... you see back in 1.19.4 (which feels like so long ago now) they added the block display, text display and item display. so you would think that for a custom block i would add a block display... NO i had to use an item display because i was having a hard time getting it to read the model so i just gave up and used the model i already have..</h3>
+<h3>So just like with items paper plugins are not really supposed to have blocks and items because that's what mods do, but i made blocks anyway... you see back in 1.19.4 (which feels like so long ago now) they added the block display, text display and item display. so you would think that for a custom block i would add a block display... NO i had to use an item display because i was having a hard time getting it to read the model so i just gave up and used the model i already have..</h3>
 <h2>COLLISIONS</h2>
 <h3>so how i did this is making an invisible shulker with no AI, a passenger of the item display. then i had to mess with the translation (movement) because it was misaligned but once it was ready i put the finished command into the plugin..</h3>
 <h1>OH GOD</h1>
 <h3>so this is where it started getting bad... you see in game i could just use "execute align xyz run" to align it to the block grid. but in the plugin it just wouldn't work. so i had to do the snapping on the players current position then slap that into the command.. the code was...</h3>
-<p id="code">val player = source
+<p class="code">val player = source
     .sender as? org.bukkit.entity.Player ?: return<br>
     val loc = player.location<br>
     val snapX = if (loc.blockX < 0) "${loc.blockX + 1}.5" else "${loc.blockX}.5"<br>
@@ -40,5 +40,6 @@
     <input type="checkbox" id="theme-toggle">
     <span>Old Theme</span>
 </label>
+<a class="link" href="index.html">Back to main webpage...</a>
 <h3>© Pollaghan 2026</h3>
 </body>

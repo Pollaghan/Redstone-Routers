@@ -13,6 +13,13 @@
     <h2 class="loading-text">Loading...</h2>
 </div>
 <body>
+<h1>ITEMS <img class="itemicon" src="icon.png"> </h1>
+<h3>So paper plugins are not really supposed to have blocks and items because that's what mods do. so i had to take an existing block and make it so that when it had a custom name it changed its model. so i had my file structure like...</h3>
+<pre class="code">  |-textures/item/(item textures)
+    assets/minecraft|-models/item/(item models)
+                    |-items/(ok im explaining this one)
+</pre>
+<h3>so the items folder contains a .json file named after an existing block (eg. iron_block.json) and inside of it basically has data telling minecraft to change the model of the item when its name is changed. now to rename it you CANT use an anvil because that adds italics to the name. instead you have to use a command like</h3> <p class="code">/give @s iron_block[item_name="Item Name"]</p> <h3>but once you do that it works and you have your item and thanks to the custom name you can detect when the item is named that and make it do something special.</h3>
 <br>
 <br>
 <br>
@@ -24,5 +31,6 @@
     <input type="checkbox" id="theme-toggle">
     <span>Old Theme</span>
 </label>
+<a class="link" href="index.html">Back to main webpage...</a>
 <h3>© Pollaghan 2026</h3>
 </body>

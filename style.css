@@ -64,6 +64,11 @@ body:not(:has(.switch input:checked)) {
     opacity: 0;
     visibility: hidden;
 }
-#code {
+.code {
+    font-family: "Press Start 2P", system-ui;
     color: yellow;
+}
+.itemicon {
+    width: 70px;
+    height: 70px;
 }
