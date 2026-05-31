@@ -5,4 +5,13 @@ document.addEventListener("DOMContentLoaded", () => {
     setTimeout(() => {
         preloader.classList.add("preloader-hidden");
     },  LoadTime)
+    const ThemeToggle = document.getElementById("theme-toggle");
+    const SwitchText = document.getElementById("SwitchText");
+    ThemeToggle.addEventListener("change", () => {
+        if (ThemeToggle.checked) {
+            SwitchText.textContent = "New Theme (More crowded)";
+        }else {
+            SwitchText.textContent = "Old Theme (Less crowded)";
+        }
+    })
 });
