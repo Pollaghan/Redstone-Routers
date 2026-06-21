@@ -8,7 +8,7 @@
 ~~~~ 
 /GetRedstoneRouter
 ~~~~ 
-#### 3: craft it using the shown crafting recipe
+* craft it using the shown crafting recipe
 <img src="RouterRecipe.png" width="20%" />
 
 ### Now you want to get a Ping Block which you can get by
