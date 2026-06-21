@@ -20,7 +20,10 @@
 * craft it but with this recipe
 <img src="PingRecipe.png" width="20%" />
 
-### Ok we have both of the blocks so heres how it works: <li> Every Redstone Router has a 6 digit ping ID (e.g. 568456). when you right-click the Redstone Router in chat it tells you the ID of that router <li> Then place down a Ping Block which is placed next to a Redstone Router and right click it. this will bring up a UI where you enter the PingID of the Redstone Router you want to ping <li> Finally the redstone signal sent into the Ping Block (including its signal strength) will come out the Redstone Router you pinged
+### Ok we have both of the blocks so heres how it works:
+* Every Redstone Router has a 6 digit ping ID (e.g. 568456). when you right-click the Redstone Router in chat it tells you the ID of that router
+* Then place down a Ping Block which is placed next to a Redstone Router and right click it. this will bring up a UI where you enter the PingID of the Redstone Router you want to ping
+* Finally the redstone signal sent into the Ping Block (including its signal strength) will come out the Redstone Router you pinged
 ## So thats how to use it
 ## <span style="color:red;"> **Warning:** THIS IS EXTREMLY BUGGY because I suck at programming and the way it works is very jank</span>
 ### the development process is explained more <a href="https://pollaghan.github.io/Redstone-Routers/">here</a>
